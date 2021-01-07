@@ -1,0 +1,59 @@
+<resources xmlns:ns2="http://schemas.android.com/apk/res-auto">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextInputView" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <!--    <style name="TextInputView" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorCheck</item>
+        <!--        <item name="hintTextAppearance">@style/EditTextHintStyle</item>-->
+        <item name="hintTextColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <!--        <item name="materialThemeOverlay">@style/ThemeOverlayFilledPadding</item>-->
+    </style>
+
+    <style name="EditTextHintStyle">
+        <item name="android:textSize">14sp</item>
+        <!--        <item name="android:letterSpacing">0.0333333333</item>-->
+    </style>
+
+    <style name="ThemeOverlayFilledPadding">
+        <item name="editTextStyle">@style/TextInputEditText_filledBox_padding</item>
+    </style>
+
+    <style name="TextInputEditText_filledBox_padding" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <!-- left and right padding -->
+        <item name="android:paddingStart" ns2:ignore="NewApi">2dp</item>
+        <item name="android:paddingEnd" ns2:ignore="NewApi">2dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+
+        <!-- top and bottom padding -->
+        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+</resources>
